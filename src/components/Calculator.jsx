@@ -60,29 +60,50 @@ export default function Calculator() {
     return (
         <div>
             <Box/>
-            <Container maxWidth="xs">
+            <Container maxWidth="lg">
                 <div className='wrap'>
                     <Box />
+                    <div className="battery">
+                        <div className="slots"><p className="hidden">P</p></div>
+                        <div className="slots"><p className="hidden">P</p></div>
+                        <div className="slots"><p className="hidden">P</p></div>
+                        <div className="slots"><p className="hidden">P</p></div>
+                    </div>
                     <h1 className="resultado">{num}</h1>
-                    <button className="auxiliares" onClick={clear}>AC</button>
-                    <button className="auxiliares" onClick={mudarSinal}>+/-</button>
-                    <button className="auxiliares" onClick={porcentagem}>%</button>
-                    <button className="operadores" onClick={operatorHandler} value={"/"}>/</button>
-                    <button className="numeros" onClick={inputNum} value={1}>1</button>
-                    <button className="numeros" onClick={inputNum} value={2}>2</button>
-                    <button className="numeros" onClick={inputNum} value={3}>3</button>
-                    <button className="operadores" onClick={operatorHandler} value={"X"}>X</button>
-                    <button className="numeros" onClick={inputNum} value={4}>4</button>
-                    <button className="numeros" onClick={inputNum} value={5}>5</button>
-                    <button className="numeros" onClick={inputNum} value={6}>6</button>
-                    <button className="operadores" onClick={operatorHandler} value={"-"}>-</button>
-                    <button className="numeros" onClick={inputNum} value={7}>7</button>
-                    <button className="numeros" onClick={inputNum} value={8}>8</button>
-                    <button className="numeros" onClick={inputNum} value={9}>9</button>
-                    <button className="operadores" onClick={operatorHandler} value={"+"}>+</button>
-                    <button className="numeros" onClick={inputNum} value={0}>0</button>
-                    <button className="numeros" onClick={inputNum} value={"."}>,</button>
-                    <button className="operadores" onClick={calcular}>=</button>
+
+                    <div className="row1">
+                        <button className="auxiliares" onClick={clear}>AC</button>
+                        <button className="auxiliares" onClick={mudarSinal}>+/-</button>
+                        <button className="auxiliares" onClick={porcentagem}>%</button>
+                        <button className="operadores" onClick={operatorHandler} value={"/"}>/</button>
+                    </div>
+
+                    <div className="row2">
+                        <button className="numeros" onClick={inputNum} value={1}>1</button>
+                        <button className="numeros" onClick={inputNum} value={2}>2</button>
+                        <button className="numeros" onClick={inputNum} value={3}>3</button>
+                        <button className="operadores" onClick={operatorHandler} value={"X"}>X</button>
+                    </div>
+
+                    <div className="row3">
+                        <button className="numeros" onClick={inputNum} value={4}>4</button>
+                        <button className="numeros" onClick={inputNum} value={5}>5</button>
+                        <button className="numeros" onClick={inputNum} value={6}>6</button>
+                        <button className="operadores" onClick={operatorHandler} value={"-"}>-</button>
+                    </div>
+
+                    <div className="row4">
+                        <button className="numeros" onClick={inputNum} value={7}>7</button>
+                        <button className="numeros" onClick={inputNum} value={8}>8</button>
+                        <button className="numeros" onClick={inputNum} value={9}>9</button>
+                        <button className="operadores" onClick={operatorHandler} value={"+"}>+</button>
+                    </div>
+
+                    <div className="row5">
+                        <button className="numeros" onClick={inputNum} value={0}>0</button>
+                        <button className="numeros" onClick={inputNum} value={"."}>,</button>
+                        <button className="operadores" onClick={calcular}>=</button>
+                    </div>
                 </div>
             </Container>
         </div>
