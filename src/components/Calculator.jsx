@@ -68,6 +68,7 @@ export default function Calculator() {
                         <div className="slots"><p className="hidden">P</p></div>
                         <div className="slots"><p className="hidden">P</p></div>
                         <div className="slots"><p className="hidden">P</p></div>
+                        <div className="slots"><p className="hidden">P</p></div>
                     </div>
                     <h1 className="resultado">{num}</h1>
 

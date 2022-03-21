@@ -6,13 +6,16 @@
 
 .battery {
     display: flex;
-    gap: 1rem;
+    gap: .3rem;
+    margin: 1rem 2.3rem;
+    padding: 0;
 }
 
 .slots {
-    background-color: yellow;
-    width: 10px;
-    height: 10px;
+    background-color: #4F403B;
+    width: 27px;
+    height: 27px;
+    outline: 2px solid #3B3D3E;
 }
 
 .hidden {
@@ -38,7 +41,7 @@ button:hover {
     border: 0px solid white;
     border-radius: 1rem;
     box-shadow: 5px 7px 10px black;
-    padding: 3rem 1rem;
+    padding: 0rem 1rem 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
