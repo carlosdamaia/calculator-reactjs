@@ -2,4 +2,6 @@
 
 A simple calculator using React. The main goal building this app was to get familiar with React.
 
-![](https://github.com/carlosdamaia/calculator-reactjs/blob/main/calculatorprint.JPG?raw=true)
+[Preview Live](https://spontaneous-taffy-7ed5f4.netlify.app/)
+
+![calculator](https://github.com/carlosdamaia/calculator-reactjs/blob/main/calculatorprint.JPG?raw=true)
